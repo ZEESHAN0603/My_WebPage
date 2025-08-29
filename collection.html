@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zee Pvt Ltd</title>
+    <link rel="icon" href="Img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Zee Pvt Ltd</h1>
+
+        <div class="nav-links">
+            <p class="link"><a href="mainpg.html">HOME</a></p>
+            <p class="link"><a href="collection.html">COLLECTIONS</a></p>
+            <p class="link"><a href="contact.html">CONTACT US</a></p>
+            <p class="link"><a href="cart.html">CART</a></p>
+        </div>
+
+        <div class="nav-toggle" onclick="openNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <div class="side-nav">
+        <p style="text-align: right;" onclick="closeNav()">
+            <i class="fas fa-times"></i>
+        </p>
+
+        <div class="sidenavbar">
+            <p class="sidenavlink"><a href="mainpg.html">HOME</a></p>
+            <p class="sidenavlink"><a href="collection.html">COLLECTIONS</a></p>
+            <p class="sidenavlink"><a href="contact.html">CONTACT US</a></p>
+        </div>
+    </div>
+
+    <div class="prod">
+        <form class="prod-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </form>
+
+        <div class="prod-cont" id="prod-conts">
+            <div class="prod-box">
+                <img src="Img/Dell1.jpg" width="200px" height="200px">
+                <p>Dell Latitude 7480</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Dell Latitude 7480', 'Img/Dell1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Dell2.jpg" width="200px" height="200px">
+                <p>Dell Precision 5550</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Dell Precision 5550', 'Img/Dell2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Dell3.jpg" width="200px" height="200px">
+                <p>Dell XPS 15</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Dell XPS 15', 'Img/Dell3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Dell4.jpg" width="200px" height="200px">
+                <p>Dell Vostro 3000</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Dell Vostro 3000', 'Img/Dell4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Lenovo1.jpg" width="200px" height="200px">
+                <p>Lenovo ThinkPad X1 Gen9</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Lenovo ThinkPad X1 Gen9', 'Img/Lenovo1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Lenovo2.jpg" width="200px" height="200px">
+                <p>Lenovo IdeaPad 3</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Lenovo IdeaPad 3', 'Img/Lenovo2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Lenovo3.jpg" width="200px" height="200px">
+                <p>Lenovo ThinkPad 15</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Lenovo ThinkPad 15', 'Img/Lenovo3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Lenovo4.jpg" width="200px" height="200px">
+                <p>Lenovo ThinkPad X1</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Lenovo ThinkPad X1', 'Img/Lenovo4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Mac1.jpg" width="200px" height="200px">
+                <p>MacBook Pro 15</p>
+                <p>$1200</p>
+                <button onclick="addToCart('MacBook Pro 15', 'Img/Mac1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Mac2.jpg" width="200px" height="200px">
+                <p>MacBook 12</p>
+                <p>$1200</p>
+                <button onclick="addToCart('MacBook 12', 'Img/Mac2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Mac3.jpg" width="200px" height="200px">
+                <p>MacBook 13</p>
+                <p>$1200</p>
+                <button onclick="addToCart('MacBook 13', 'Img/Mac3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Mac4.jpg" width="200px" height="200px">
+                <p>MacBook Air 1</p>
+                <p>$1200</p>
+                <button onclick="addToCart('MacBook Air 1', 'Img/Mac4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Asus1.jpg" width="200px" height="200px">
+                <p>Asus TUF Gaming F17</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Asus TUF Gaming F17', 'Img/Asus1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Asus2.jpg" width="200px" height="200px">
+                <p>Asus ZenBook DUO</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Asus ZenBook DUO', 'Img/Asus2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Asus3.jpg" width="200px" height="200px">
+                <p>Asus ZenBook 14</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Asus ZenBook 14', 'Img/Asus3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Asus4.jpg" width="200px" height="200px">
+                <p>Asus TUF Gaming F15</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Asus TUF Gaming F15', 'Img/Asus4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Sam1.jpg" width="200px" height="200px">
+                <p>Samsung S23</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Samsung S23', 'Img/Sam1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Sam2.jpg" width="200px" height="200px">
+                <p>Samsung S24 FE</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Samsung S24 FE', 'Img/Sam2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Sam3.jpg" width="200px" height="200px">
+                <p>Samsung S24 Ultra</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Samsung S24 Ultra', 'Img/Sam3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Sam4.jpg" width="200px" height="200px">
+                <p>Samsung A24 5G</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Samsung A24 5G', 'Img/Sam4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Iphn1.jpg" width="200px" height="200px">
+                <p>Iphone XS Max</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Iphone XS Max', 'Img/Iphn1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Iphn2.jpg" width="200px" height="200px">
+                <p>Iphone 12 Pro</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Iphone 12 Pro', 'Img/Iphn2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Iphn3.jpg" width="200px" height="200px">
+                <p>Iphone 13 Pro</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Iphone 13 Pro', 'Img/Iphn3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Iphn4.jpg" width="200px" height="200px">
+                <p>Iphone 16</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Iphone 16', 'Img/Iphn4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Google1.jpg" width="200px" height="200px">
+                <p>Google Pixel 9 Pro</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Google Pixel 9 Pro', 'Img/Google1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Google2.jpg" width="200px" height="200px">
+                <p>Google Pixel 8 Pro</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Google Pixel 8 Pro', 'Img/Google2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Google3.jpg" width="200px" height="200px">
+                <p>Google Pixel 9 Pro</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Google Pixel 9a', 'Img/Google3.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Google4.jpg" width="200px" height="200px">
+                <p>Google Pixel 6</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Google Pixel 6', 'Img/Google4.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Headphn1.jpg" width="200px" height="200px">
+                <p>Sony Headphone WH-1000XM4</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Sony Headphone WH-1000XM4', 'Img/Headphn1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Headphn2.jpg" width="200px" height="200px">
+                <p>Apple Air HeadPhone</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Apple Air HeadPhone', 'Img/Headphn2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Ear1.jpg" width="200px" height="200px">
+                <p>Airpods Gen2</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Airpods Gen2', 'Img/Ear1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Ear2.jpg" width="200px" height="200px">
+                <p>Airpods Gen 3 Pro</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Airpods Gen 3 Pro', 'Img/Ear2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Key1.jpg" width="200px" height="200px">
+                <p>Yunzii AL66</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Yunzii AL66', 'Img/Key1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Key2.jpg" width="200px" height="200px">
+                <p>BGKYPRO Wireless Keyboard</p>
+                <p>$1200</p>
+                <button onclick="addToCart('BGKYPRO Wireless Keyboard', 'Img/Key2.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Mouse1.jpg" width="200px" height="200px">
+                <p>Razer Viper V2</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Razer Viper V2', 'Img/Mouse1.jpg', 1200)">Add to Cart</button>
+            </div>
+            <div class="prod-box">
+                <img src="Img/Mouse2.jpg" width="200px" height="200px">
+                <p>Logitech G502</p>
+                <p>$1200</p>
+                <button onclick="addToCart('Logitech G502', 'Img/Mouse2.jpg', 1200)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="f-cont">
+            <div class="f-box1">
+                <h2 class="heading">Zee Pvt Ltd...</h2>
+                <p>We are a leading company in the e-commerce sector, providing top-notch products and services to our
+                    customers.</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="collection.js"></script>
+    <script src="mainpg.js"></script>
+</body>
+
+</html>
